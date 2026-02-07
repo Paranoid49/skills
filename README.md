@@ -33,7 +33,7 @@ codePartner/
 
 ```bash
 # 1. 添加 Marketplace 源
-/plugin marketplace add Paranoid49/codepartner
+/plugin marketplace add Paranoid49/skills
 
 # 2. 安装插件
 /plugin install code-partner
