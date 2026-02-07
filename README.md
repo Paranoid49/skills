@@ -38,9 +38,6 @@ codePartner/
 # 2. 安装插件
 /plugin install code-partner
 ```
-
-📖 **详细安装指南**: [docs/installation.md](docs/installation.md)
-
 ## 查看日志
 
 日志会自动记录到 `project_logs/optimization/YYYY-MM-DD.md`
@@ -105,7 +102,6 @@ Skill 内置完整的风险评估参考，覆盖：
 
 ## 📚 更多文档
 
-- [安装指南](docs/installation.md)
 - [完整使用指南](docs/usage.md)
 - [风险评估详解](docs/risk_assessment.md)
 - [日志格式规范](docs/log_format.md)
