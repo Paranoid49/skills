@@ -29,59 +29,19 @@ codePartner/
 
 ## 🚀 快速开始
 
-### 方法一：通过 Claude Plugin Marketplace 安装（推荐）
+### 通过 Claude Plugin Marketplace 安装（推荐）
 
 ```bash
 # 1. 添加 Marketplace 源
-/plugin marketplace add https://github.com/yourusername/codePartner
+/plugin marketplace add Paranoid49/codepartner
 
 # 2. 安装插件
 /plugin install code-partner
 ```
 
-### 方法二：手动安装
-
-下载 [`code-partner.skill`](skills/code-partner.skill) 文件，解压到 Claude skills 目录：
-
-```bash
-# Windows
-mkdir %USERPROFILE%\.claude\skills\code-partner
-expand code-partner.skill -F:* %USERPROFILE%\.claude\skills\code-partner\
-
-# Linux/Mac
-mkdir -p ~/.claude/skills/code-partner
-unzip code-partner.skill -d ~/.claude/skills/code-partner
-```
-
-或从源码安装：
-
-```bash
-# Windows
-xcopy /E /I skills\code-partner %USERPROFILE%\.claude\skills\code-partner
-
-# Linux/Mac
-cp -r skills/code-partner ~/.claude/skills/
-```
-
 📖 **详细安装指南**: [docs/installation.md](docs/installation.md)
 
-### 2. 使用日志脚本
-
-```bash
-# 记录一次优化变更
-python skills/code-partner/scripts/log_change.py \
-  --type "优化" \
-  --purpose "优化数据库查询性能，解决N+1问题" \
-  --modules "user_service, database" \
-  --changes "使用selectinload预加载关联数据" \
-  --method "SQLAlchemy ORM优化" \
-  --metrics "- API响应时间 < 150ms\n- 查询次数降至2次" \
-  --risk "中风险 - 需监控内存占用" \
-  --impact "其他列表查询可参考此方案" \
-  --todos "- 审查所有循环查询代码"
-```
-
-### 3. 查看日志
+## 查看日志
 
 日志会自动记录到 `project_logs/optimization/YYYY-MM-DD.md`
 
