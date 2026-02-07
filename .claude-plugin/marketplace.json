@@ -1,0 +1,23 @@
+{
+  "name": "code-partner",
+  "owner": {
+    "name": "liang",
+    "email": "0249wl@gmail.com"
+  },
+  "metadata": {
+    "description": "liang's skills market",
+    "version": "1.0.0",
+    "license": "MIT"
+  },
+  "plugins": [
+    {
+      "name": "code-partner",
+      "description": "让 Claude 成为项目的资深编程伙伴和守门员，每次执行任务前进行技术益害评估（益处检查+风险评估），对隐患提出警告并提供替代方案。维护优化日志系统，记录所有变更目的、内容和验证结果。",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/code-partner"
+      ]
+    }
+  ]
+}
