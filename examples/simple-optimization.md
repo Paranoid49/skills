@@ -18,7 +18,7 @@
 ### 实施变更
 
 ```bash
-python skills/code-partner/scripts/log_change.py \
+python ~/.claude/plugins/marketplaces/code-partner/skills/code-partner/scripts/log_change.py \
   --type "优化" \
   --purpose "解决用户列表 N+1 查询问题" \
   --modules "user_service, database" \
@@ -70,7 +70,7 @@ python skills/code-partner/scripts/log_change.py \
 ### 用户选择方案 A
 
 ```bash
-python skills/code-partner/scripts/log_change.py \
+python ~/.claude/plugins/marketplaces/code-partner/skills/code-partner/scripts/log_change.py \
   --type "优化" \
   --purpose "为配置数据添加内存缓存" \
   --modules "config_service" \
@@ -105,7 +105,7 @@ python skills/code-partner/scripts/log_change.py \
 ### 实施变更
 
 ```bash
-python skills/code-partner/scripts/log_change.py \
+python ~/.claude/plugins/marketplaces/code-partner/skills/code-partner/scripts/log_change.py \
   --type "优化" \
   --purpose "解耦 service 层和 repository 层的循环依赖" \
   --modules "user_service, order_service, repository" \
@@ -141,7 +141,7 @@ python skills/code-partner/scripts/log_change.py \
 ### 实施变更
 
 ```bash
-python skills/code-partner/scripts/log_change.py \
+python ~/.claude/plugins/marketplaces/code-partner/skills/code-partner/scripts/log_change.py \
   --type "需求" \
   --purpose "实现用户头像上传功能" \
   --modules "user_api, storage_service" \
@@ -180,7 +180,7 @@ python skills/code-partner/scripts/log_change.py \
 ### 实施变更
 
 ```bash
-python skills/code-partner/scripts/log_change.py \
+python ~/.claude/plugins/marketplaces/code-partner/skills/code-partner/scripts/log_change.py \
   --type "Bug修复" \
   --purpose "修复高并发下库存超卖问题" \
   --modules "order_service, inventory" \
@@ -226,7 +226,7 @@ python skills/code-partner/scripts/log_change.py \
 ### 用户仍选择方案 B
 
 ```bash
-python skills/code-partner/scripts/log_change.py \
+python ~/.claude/plugins/marketplaces/code-partner/skills/code-partner/scripts/log_change.py \
   --type "需求" \
   --purpose "引入 Elasticsearch 实现全文搜索" \
   --modules "search_service, sync_worker" \

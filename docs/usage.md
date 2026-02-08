@@ -106,7 +106,7 @@ Claude：
 ### 基本用法
 
 ```bash
-python skills/code-partner/scripts/log_change.py [选项]
+python ~/.claude/plugins/marketplaces/code-partner/skills/code-partner/scripts/log_change.py [选项]
 ```
 
 ### 参数说明
@@ -128,7 +128,7 @@ python skills/code-partner/scripts/log_change.py [选项]
 ### 完整示例
 
 ```bash
-python skills/code-partner/scripts/log_change.py \
+python ~/.claude/plugins/marketplaces/code-partner/skills/code-partner/scripts/log_change.py \
   --type "优化" \
   --purpose "优化用户查询接口性能，解决N+1问题" \
   --modules "user_service, database_layer" \
@@ -176,7 +176,7 @@ python skills/code-partner/scripts/log_change.py \
 **场景**：添加用户认证功能
 
 ```bash
-python skills/code-partner/scripts/log_change.py \
+python ~/.claude/plugins/marketplaces/code-partner/skills/code-partner/scripts/log_change.py \
   --type "需求" \
   --purpose "实现 JWT 用户认证" \
   --modules "auth, middleware" \
@@ -196,7 +196,7 @@ python skills/code-partner/scripts/log_change.py \
 **场景**：优化慢查询
 
 ```bash
-python skills/code-partner/scripts/log_change.py \
+python ~/.claude/plugins/marketplaces/code-partner/skills/code-partner/scripts/log_change.py \
   --type "优化" \
   --purpose "优化搜索接口性能" \
   --modules "search_service" \
@@ -213,7 +213,7 @@ python skills/code-partner/scripts/log_change.py \
 **场景**：修复并发问题
 
 ```bash
-python skills/code-partner/scripts/log_change.py \
+python ~/.claude/plugins/marketplaces/code-partner/skills/code-partner/scripts/log_change.py \
   --type "Bug修复" \
   --purpose "修复并发写入数据竞争" \
   --modules "data_writer" \
