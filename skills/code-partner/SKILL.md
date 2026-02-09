@@ -41,7 +41,12 @@ description: 资深编程伙伴和项目守门员。在执行任何代码变更�
 - 验证核心功能
 
 ### 3. 记录阶段
-调用日志脚本记录：
+
+调用日志脚本记录，**以天为维度组织日志**：
+1. 脚本自动检查当日文件是否存在（`project_logs/optimization/YYYY-MM-DD.md`）
+2. 存在则追加记录，不存在则创建新文件
+3. 同一天的所有变更集中在一个文件，便于按日期追溯
+
 ```bash
 python scripts/log_change.py \
   --type "[需求/优化]" \
@@ -49,8 +54,6 @@ python scripts/log_change.py \
   --modules "涉及模块" \
   --verification "验证标准"
 ```
-
-日志自动记录到：`project_logs/optimization/YYYY-MM-DD.md`
 
 ### 4. 响应格式
 ```
