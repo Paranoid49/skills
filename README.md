@@ -47,7 +47,6 @@ codePartner/
 │
 ├── examples/                    # code-partner 使用示例
 ├── docs/                        # 详细文档
-├── project_logs/                # code-partner 运行时日志目录
 └── README.md
 ```
 
@@ -68,16 +67,17 @@ codePartner/
 
 ### code-partner
 
-- [完整使用指南](docs/usage.md)
-- [风险评估详解](docs/risk_assessment.md)
-- [日志格式规范](docs/log_format.md)
-- [使用示例](examples/)
+- [完整使用指南](docs/code-partner/usage.md)
+- [风险评估详解](docs/code-partner/risk_assessment.md)
+- [日志格式规范](docs/code-partner/log_format.md)
+- [使用示例](examples/code-partner)
 
 ### code-documenter
 
 - [技能说明](skills/code-documenter/SKILL.md)
 - [文档模板](skills/code-documenter/references/DOCUMENT_TEMPLATE.md)
 - [图表样式指南](skills/code-documenter/references/DIAGRAM_STYLES.md)
+- [使用示例](examples/code-documenter)
 
 ## 🎓 code-partner 工作流程
 
@@ -135,7 +135,7 @@ code-partner 内置完整的风险评估参考，覆盖：
 - 🔧 可维护性风险（技术债务、测试盲区）
 - 🔒 安全风险（注入攻击、敏感数据）
 
-详见 [docs/risk_assessment.md](docs/risk_assessment.md)
+详见 [docs/code-partner/risk_assessment.md](docs/code-partner/risk_assessment.md)
 
 ## 🤝 贡献
 
