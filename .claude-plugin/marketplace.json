@@ -16,7 +16,8 @@
       "source": "./",
       "strict": false,
       "skills": [
-        "./skills/code-partner"
+        "./skills/code-partner",
+        "./skills/code-documenter"
       ]
     }
   ]
