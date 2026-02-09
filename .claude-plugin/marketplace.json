@@ -1,11 +1,11 @@
 {
-  "name": "liang-skills",
+  "name": "49-skills",
   "owner": {
-    "name": "liang",
+    "name": "49",
     "email": "0249wl@gmail.com"
   },
   "metadata": {
-    "description": "liang's skills market",
+    "description": "49's skills market",
     "version": "1.0.0",
     "license": "MIT"
   },
