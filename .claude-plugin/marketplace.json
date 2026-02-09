@@ -11,8 +11,8 @@
   },
   "plugins": [
     {
-      "name": "code-partner",
-      "description": "让 Claude 成为项目的资深编程伙伴和守门员，每次执行任务前进行技术益害评估（益处检查+风险评估），对隐患提出警告并提供替代方案。维护优化日志系统，记录所有变更目的、内容和验证结果。",
+      "name": "code-assistant",
+      "description": "代码助手技能集合：包含 code-partner（资深编程伙伴和守门员，进行技术益害评估、风险预警和优化日志记录）和 code-documenter（项目学习文档生成器，自动分析项目代码并生成结构化学习文档）。",
       "source": "./",
       "strict": false,
       "skills": [
