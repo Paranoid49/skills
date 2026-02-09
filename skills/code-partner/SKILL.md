@@ -43,7 +43,7 @@ description: 资深编程伙伴和项目守门员。在执行任何代码变更�
 ### 3. 记录阶段
 调用日志脚本记录：
 ```bash
-python ~/.claude/plugins/marketplaces/code-partner/skills/code-partner/scripts/log_change.py \
+python scripts/log_change.py \
   --type "[需求/优化]" \
   --purpose "变更目的说明" \
   --modules "涉及模块" \
