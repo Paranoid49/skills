@@ -11,12 +11,20 @@
   },
   "plugins": [
     {
-      "name": "code-assistant",
-      "description": "代码助手技能集合：包含 code-partner（资深编程伙伴和守门员，进行技术益害评估、风险预警和优化日志记录）和 code-documenter（项目学习文档生成器，自动分析项目代码并生成结构化学习文档）。",
+      "name": "code-partner",
+      "description": "资深编程伙伴和守门员。每次执行任务前进行技术益害评估（益处检查+风险评估），对隐患提出警告并提供替代方案。维护优化日志系统，记录所有变更目的、内容和验证结果。",
       "source": "./",
       "strict": false,
       "skills": [
-        "./skills/code-partner",
+        "./skills/code-partner"
+      ]
+    },
+    {
+      "name": "code-documenter",
+      "description": "项目学习文档生成器。自动分析项目代码和文档，生成全面的学习文档和流程图，包含架构图、模块详解、设计决策等，帮助新人快速理解项目。",
+      "source": "./",
+      "strict": false,
+      "skills": [
         "./skills/code-documenter"
       ]
     }
