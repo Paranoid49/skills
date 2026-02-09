@@ -41,7 +41,7 @@ project_logs/
 Thumbs.db
 
 # Claude specific
-.claude/cache/
+.claude/
 
 # Version tracking
 skills/code-partner/.version
