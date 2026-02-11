@@ -27,6 +27,15 @@
       "skills": [
         "./skills/code-documenter"
       ]
+    },
+    {
+      "name": "code-interview",
+      "description": "项目代码面试文档生成器。系统性地梳理项目发展历史，输出完整变更历史文档和重难点专题文档，用于代码面试准备、新人入职项目理解和技术债梳理。",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/code-interview"
+      ]
     }
   ]
 }
