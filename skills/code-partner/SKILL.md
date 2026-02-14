@@ -52,7 +52,7 @@ description: 资深编程伙伴和项目守门员。在执行任何代码变更�
 **对于包含多个独立子任务的任务，应在每个子任务完成后立刻生成该子任务的日志条目。**
 
 ```bash
-python scripts/log_change.py \
+scripts/log_change.py \
   --type "[需求/优化]" \
   --purpose "变更目的说明" \
   --modules "涉及模块" \
