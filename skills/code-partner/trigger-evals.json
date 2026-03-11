@@ -1,0 +1,82 @@
+[
+  {
+    "query": "帮我给这个 Python 项目的登录逻辑加一个失败锁定机制，连续输错密码 5 次就锁 10 分钟。先帮我评估这样改的收益和风险，再决定怎么实现。",
+    "should_trigger": true
+  },
+  {
+    "query": "我们准备把订单服务里的数据库访问统一收口到一个 repository 层，你先别急着写代码，先判断这样改的收益、风险和可能的替代方案。",
+    "should_trigger": true
+  },
+  {
+    "query": "这个接口太慢了，想加 Redis 缓存，但我担心复杂度上升。请先从技术方案角度帮我权衡一下，再说值不值得做。",
+    "should_trigger": true
+  },
+  {
+    "query": "我想把这个老项目里的几个 service 做一轮重构，顺便理清模块边界。你先帮我拆分子任务，并评估每块改动的风险。",
+    "should_trigger": true
+  },
+  {
+    "query": "给现有文件上传功能补一个图片压缩能力，但我担心会引入额外安全问题。先分析下收益和潜在风险。",
+    "should_trigger": true
+  },
+  {
+    "query": "我们想接入一个新的第三方短信 SDK，你不要直接接，先帮我判断引入这个依赖的维护成本、故障面和替代方案。",
+    "should_trigger": true
+  },
+  {
+    "query": "线上有个并发 bug，库存偶尔会超卖。请先从并发和数据一致性角度分析风险，再给修复策略。",
+    "should_trigger": true
+  },
+  {
+    "query": "我准备把现在的单例配置管理器改成全局可变对象，图省事。你先别改，先告诉我这样做有什么坏处，有没有更稳妥的替代方案。",
+    "should_trigger": true
+  },
+  {
+    "query": "这个 PR 里会改 6 个文件，我想让你像资深工程师一样先做技术权衡：哪些地方值得改，哪些风险要提醒我。",
+    "should_trigger": true
+  },
+  {
+    "query": "帮我看看 UserService 在哪里被调用，给我列出文件位置就行，不要改代码。",
+    "should_trigger": false
+  },
+  {
+    "query": "把 README 里安装步骤那一段润色一下，语气更自然一点，不涉及代码。",
+    "should_trigger": false
+  },
+  {
+    "query": "我想知道这个 Django 项目里 auth middleware 的执行顺序，先帮我读代码解释一下，不要提改造方案。",
+    "should_trigger": false
+  },
+  {
+    "query": "执行一下 git status，顺便告诉我现在有哪些文件变了。",
+    "should_trigger": false
+  },
+  {
+    "query": "帮我把这个函数改成 snake_case 命名。只是重命名，不需要做额外设计讨论。",
+    "should_trigger": false
+  },
+  {
+    "query": "我已经决定要把这个接口改成异步实现了，直接按这个方向改，不用先给我做方案对比。",
+    "should_trigger": false
+  },
+  {
+    "query": "请读取 logs/app.log，帮我总结最近 50 行里最明显的报错模式。",
+    "should_trigger": false
+  },
+  {
+    "query": "修一下这个明显的拼写错误：把 respones 改成 response，其他都别动。",
+    "should_trigger": false
+  },
+  {
+    "query": "我只想让你解释一下这段 SQL 为什么慢，不需要改代码，也不用写日志模板。",
+    "should_trigger": false
+  },
+  {
+    "query": "把 docs 目录下所有 markdown 文件的二级标题统一一下格式，属于纯文档整理。",
+    "should_trigger": false
+  },
+  {
+    "query": "帮我找出 payment_service.py 里 raise TimeoutError 的地方，给我行号就行。",
+    "should_trigger": false
+  }
+]
