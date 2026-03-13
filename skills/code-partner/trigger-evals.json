@@ -76,7 +76,43 @@
     "should_trigger": false
   },
   {
-    "query": "帮我找出 payment_service.py 里 raise TimeoutError 的地方，给我行号就行。",
+    "query": "这个支付模块有个超时 bug，会影响 4 个文件。别做方案评审了，直接修，改完顺手把测试补上。",
     "should_trigger": false
+  },
+  {
+    "query": "我已经决定把用户资料接口拆成 controller/service/repository 三层，按这个方案直接改，不需要再做技术取舍。",
+    "should_trigger": false
+  },
+  {
+    "query": "把订单查询这块做下性能优化，先直接从最慢的 SQL 入手改代码，必要的话再加索引，不用先分析值不值得。",
+    "should_trigger": false
+  },
+  {
+    "query": "这个 PR 改动有点多，你先帮我把冲突解决掉并跑测试，不需要做架构层面的评审。",
+    "should_trigger": false
+  },
+  {
+    "query": "帮我把 auth 相关 5 个文件里的命名统一一下并修掉 lint 报错，属于机械修改，别展开风险讨论。",
+    "should_trigger": false
+  },
+  {
+    "query": "我要给上传接口加图片压缩，方案已经定了用 Pillow，直接实现并告诉我改了哪些文件。",
+    "should_trigger": false
+  },
+  {
+    "query": "请把现在的同步短信发送改成异步队列方案，技术选型已经定了，直接落地。",
+    "should_trigger": false
+  },
+  {
+    "query": "这个并发问题我已经定位到 transaction scope 了，你直接按悲观锁修，不用再评估替代方案。",
+    "should_trigger": false
+  },
+  {
+    "query": "我们在考虑把订单服务的数据访问收口到 repository 层，先别写代码，先帮我权衡收益、风险和替代方案。",
+    "should_trigger": true
+  },
+  {
+    "query": "这个接口想加 Redis 缓存，但我不确定复杂度是否值得，先帮我分析方案利弊和失败面。",
+    "should_trigger": true
   }
 ]
